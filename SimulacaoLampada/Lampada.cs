@@ -3,21 +3,26 @@ namespace SimulacaoLampada
 {
     public class Lampada
     {
-        public bool Acesa;
+        private bool _Acesa;
 
         public Lampada()
         {
-            this.Acesa = false;
+            this._Acesa = false;
+        }
+
+        public bool Acesa
+        {
+            get { return _Acesa; }
         }
 
         public void Acender()
         {
-            Acesa = true;
+            _Acesa = true;
         }
 
         public void Apagar()
         {
-            Acesa = false;
+            _Acesa = false;
         }
     }
 }
