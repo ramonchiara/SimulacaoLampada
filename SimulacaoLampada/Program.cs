@@ -21,12 +21,13 @@ namespace SimulacaoLampada
             bool sair = false;
             do
             {
+                Console.Clear();
                 Console.WriteLine("Estado das lâmpadas:");
                 for (int i = 0; i < lampadas.Length; i++)
                 {
                     Console.WriteLine("Lâmpada {0}: {1}", i, lampadas[i].Queimada ? "queimada" : (lampadas[i].Acesa ? "acesa" : "apagada"));
                 }
-
+                Console.WriteLine();
                 Console.WriteLine("O que você quer fazer?");
                 Console.WriteLine("1. Acender");
                 Console.WriteLine("2. Apagar");
