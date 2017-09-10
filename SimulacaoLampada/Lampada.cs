@@ -9,9 +9,11 @@ namespace SimulacaoLampada
 
         public Lampada()
         {
+            Random rng = new Random();
+
             this._Acesa = false;
             this._Queimada = false;
-            this.VidaUtil = 5;
+            this.VidaUtil = rng.Next(10) + 1; // 1 a 10 vezes
         }
 
         public bool Acesa
