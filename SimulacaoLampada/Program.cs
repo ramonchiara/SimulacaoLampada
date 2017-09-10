@@ -11,7 +11,7 @@ namespace SimulacaoLampada
             bool sair = false;
             do
             {
-                Console.WriteLine("Estado da lâmpada: {0}", l.Acesa ? "acesa" : "apagada");
+                Console.WriteLine("Estado da lâmpada: {0}", l.Queimada ? "queimada" : (l.Acesa ? "acesa" : "apagada"));
                 Console.WriteLine("O que você quer fazer?");
                 Console.WriteLine("1. Acender");
                 Console.WriteLine("2. Apagar");
