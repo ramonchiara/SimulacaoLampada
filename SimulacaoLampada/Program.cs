@@ -15,7 +15,8 @@ namespace SimulacaoLampada
                 Console.WriteLine("O que você quer fazer?");
                 Console.WriteLine("1. Acender");
                 Console.WriteLine("2. Apagar");
-                Console.WriteLine("3. Sair");
+                Console.WriteLine("3. Trocar");
+                Console.WriteLine("4. Sair");
                 Console.Write("Sua opção: ");
                 string opcao = Console.ReadLine();
 
@@ -28,6 +29,9 @@ namespace SimulacaoLampada
                         l.Apagar();
                         break;
                     case "3":
+                        l = new Lampada(); // troca a lâmpada colocando uma nova! ;-)
+                        break;
+                    case "4":
                         sair = true;
                         break;
                 }
